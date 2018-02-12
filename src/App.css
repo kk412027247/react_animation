@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.test-enter{
+  transform:rotate(0deg);
+  height:0;
+  opacity:0;
+}
+
+.test-enter.test-enter-active{
+  transform:rotate(360deg);
+  height:21px;
+  opacity:1;
+  transition:500ms linear;
+}
+
+.test-exit{
+  transform:rotate(360deg);
+  height:21px;
+  opacity:1;
+}
+
+.test-exit.test-exit-active{
+  transform:rotate(0deg);
+  height:0;
+  opacity:0;
+  transition:500ms linear;
+}
